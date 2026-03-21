@@ -1,5 +1,4 @@
 <?php include '../includes/header.php'; ?>
-
 <main>
     <section class="cursos">
         <div class="container">
@@ -26,5 +25,4 @@
         </div>
     </section>
 </main>
-
 <?php include '../includes/footer.php'; ?>

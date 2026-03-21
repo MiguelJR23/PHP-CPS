@@ -1,5 +1,4 @@
 <?php include '../includes/header.php'; ?>
-
 <main>
     <section class="contato">
         <div class="container">
@@ -23,5 +22,4 @@
         </div>
     </section>
 </main>
-
 <?php include '../includes/footer.php'; ?>
