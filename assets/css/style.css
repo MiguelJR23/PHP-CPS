@@ -116,3 +116,25 @@ section {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
