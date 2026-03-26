@@ -1,31 +1,79 @@
-<section class="cursos">
-    <div class="container">
-        <h2>Nossos Cursos</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="assets/img/placeholder.png" alt="Curso">
-                <h3>Desenvolvimento de Sistemas</h3>
-                <p>Aprenda lógica, programação e criação de sistemas.</p>
-                <a href="pages/cursos.php" class="btn-card">Saiba mais</a>
-            </div>
+<?php include 'includes/header.php'; ?>
 
-            <div class="card">
-                <img src="assets/img/placeholder.png" alt="Curso">
-                <h3>Administração</h3>
-                <p>Gestão empresarial, finanças e organização.</p>
-                <a href="pages/cursos.php" class="btn-card">Saiba mais</a>
-            </div>
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Transformando seu futuro através da educação</h1>
+            <p>Capacitação profissional com cursos modernos e focados no mercado.</p>
 
-            <div class="card">
-                <img src="assets/img/placeholder.png" alt="Curso">
-                <h3>Logística</h3>
-                <p>Estratégias de otimização de produtos e informações.</p>
-                <a href="pages/cursos.php" class="btn-card">Saiba mais</a>
+            <div class="hero-buttons">
+                <a href="pages/cursos.php" class="btn">Ver cursos</a>
+                <a href="forms/formulario.php" class="btn-outline">Agendar visita</a>
             </div>
-
         </div>
-        <div style="text-align: center; margin-top: 30px;">
+    </section>
+
+    <section class="diferenciais">
+        <div class="container">
+            <h2>Por que estudar conosco?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <i class="ri-user-star-line"></i>
+                    <h3>Professores qualificados</h3>
+                    <p>Profissionais experientes e preparados para ensinar.</p>
+                </div>
+
+                <div class="card">
+                    <i class="ri-building-line"></i>
+                    <h3>Estrutura moderna</h3>
+                    <p>Ambiente equipado para aprendizado de qualidade.</p>
+                </div>
+
+                <div class="card">
+                    <i class="ri-briefcase-4-line"></i>
+                    <h3>Foco no mercado</h3>
+                    <p>Conteúdos alinhados com as exigências profissionais.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos">
+        <div class="container">
+            <h2>Nossos Cursos</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <i class="ri-code-s-slash-line"></i>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                </div>
+
+                <div class="card">
+                    <i class="ri-briefcase-line"></i>
+                    <h3>Administração</h3>
+                </div>
+
+                <div class="card">
+                    <i class="ri-team-line"></i>
+                    <h3>Recursos Humanos</h3>
+                </div>
+
+            </div>
             <a href="pages/cursos.php" class="btn">Ver todos os cursos</a>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para começar?</h2>
+            <p>Agende uma visita e conheça nossa instituição.</p>
+            <a href="forms/formulario.php" class="btn">Agendar agora</a>
+        </div>
+    </section>
+</main>
+
+<?php include 'includes/footer.php'; ?>
