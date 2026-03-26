@@ -10,7 +10,7 @@
 <body>
 <header class="header">
     <div class="container nav">
-        <h2 class="logo"><img src="assets/img/logoEtec.jpeg" alt="Descrição"></h2>
+        <h2 class="logo"><img src="assets/img/logoEtec.jpeg" alt="Logo"></h2>
 
         <nav>
             <ul class="menu">
