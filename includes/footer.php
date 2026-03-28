@@ -1,7 +1,19 @@
 <footer class="footer">
     <div class="container footer-grid">
+
         <div class="footer-col">
+            <h3>Etec ZL</h3>
             <p>Transformando vidas através da educação profissional.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="../index.php">Início</a></li>
+                <li><a href="../pages/cursos.php">Cursos</a></li>
+                <li><a href="../pages/sobre.php">Sobre nós</a></li>
+                <li><a href="../pages/contato.php">Contato</a></li>
+            </ul>
         </div>
 
         <div class="footer-col">
@@ -14,7 +26,10 @@
         </div>
 
         <div class="footer-col">
-            <h3>Redes sociais</h3>
+            <h3>Contato</h3>
+            <p>Email: contato@eteczonaleste.com</p>
+            <p>Tel: (11) 93285-4332</p>
+
             <div class="social-icons">
                 <a href="#"><i class="ri-facebook-fill"></i></a>
                 <a href="#"><i class="ri-instagram-line"></i></a>
@@ -22,6 +37,7 @@
                 <a href="#"><i class="ri-youtube-fill"></i></a>
             </div>
         </div>
+
     </div>
 
     <div class="footer-bottom">
