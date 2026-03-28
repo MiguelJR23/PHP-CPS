@@ -1,50 +1,55 @@
 <?php include '../includes/header.php'; ?>
 <main>
-    <section class="contato">
-        <div class="container">
-            <h1>Agende uma visita!</h1>
+<section class="contato">
+    <div class="container">
 
-            <form action="processar.php" method="POST">
-                
-                <p>Seu nome:</p>
-                <input type="text" name="nome">
+        <h1>Agende uma visita!</h1>
+        <p class="form-sub">Preencha os dados abaixo e entraremos em contato.</p>
 
-                <br><br>
+        <form action="processar.php" method="POST" class="form-grid">
 
-                <p>Sua idade:</p>
-                <input type="text" name="idade">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" required>
+            </div>
 
-                <br><br>
-                  
-                <p>Motivo da visita:</p>
-                <input type="text" name="motivo">
+            <div class="form-group">
+                <label>Idade</label>
+                <input type="number" name="idade" required>
+            </div>
 
-                <br><br>
-                  
-                <p>CPF:</p>
-                <input type="text" name="cpf">
+            <div class="form-group">
+                <label>Motivo da visita</label>
+                <input type="text" name="motivo" required>
+            </div>
 
-                <br><br>
-                  
-                <p>Número de telefone:</p>
-                <input type="text" name="telefone">
+            <div class="form-group">
+                <label>CPF</label>
+                <input type="text" name="cpf" placeholder="000.000.000-00">
+            </div>
 
-                <br><br>
-                  
-                <p>Email:</p>
-                <input type="text" name="email">
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="text" name="telefone" required>
+            </div>
 
-                <br><br>
-                  
-                <p>Endereço:</p>
-                <input type="text" name="endereco">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
 
-                <br><br>
+            <div class="form-group full">
+                <label>Endereço</label>
+                <input type="text" name="endereco" required>
+            </div>
 
-                <input type="submit" value="Enviar" class="btn">
+            <div class="form-group full">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
 
-            </form>
-        </div>
-    </section>
+        </form>
+
+    </div>
+</section>
 </main>
 <?php include '../includes/footer.php'; ?>

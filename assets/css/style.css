@@ -1,3 +1,11 @@
+:root {
+    --primary: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --bg-light: #f8f9fa;
+    --text-dark: #212529;
+    --accent: #ffc107;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +15,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: var(--bg-light);
+    color: var(--text-dark);
 }
 
 .container {
@@ -16,7 +26,7 @@ body {
 }
 
 .header {
-    background: #003366;
+    background: var(--primary);
     color: white;
     padding: 15px 0;
 }
@@ -25,6 +35,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .menu {
@@ -36,16 +53,60 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    color: var(--accent);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.search-box i {
+    color: #777;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-box button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: var(--primary-dark);
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
 }
 
 .hero {
-    background: linear-gradient(to right, #0055aa, #0077cc);
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: white;
-    padding: 80px 0;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -53,25 +114,39 @@ body {
     margin-bottom: 15px;
 }
 
+.hero-buttons {
+    margin-top: 20px;
+}
+
 .btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #ffcc00;
-    color: black;
+    background: var(--accent);
+    color: var(--text-dark);
     text-decoration: none;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #e6b800;
+    background: #e0a800;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 section {
     padding: 60px 0;
 }
 
-.sobre, .cta {
+.sobre,
+.cta {
     text-align: center;
 }
 
@@ -79,47 +154,14 @@ section {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     flex: 1;
     min-width: 250px;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.btn-card {
-    display: inline-block;
-    margin-top: 10px;
-    color: #003366;
-    text-decoration: none;
-}
-
-.cta {
-    background: #003366;
-    color: white;
-}
-
-.footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.card {
-    flex: 1;
-    min-width: 250px;
-    background: #f4f4f4;
+    background: white;
+    border: 1px solid #eee;
     padding: 20px;
     border-radius: 8px;
 
@@ -131,11 +173,24 @@ section {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+.card i {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.cta {
+    background: var(--primary);
+    color: white;
+    padding: 60px 20px;
 }
 
 .contato {
@@ -146,53 +201,201 @@ section {
     margin: 10px 0;
 }
 
-.card i {
-    font-size: 50px;
-    color: #0d6efd;
-    margin-bottom: 15px;
-    display: block;
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
 }
 
 .hero {
-    background: #0d6efd;
-    color: white;
-    padding: 80px 20px;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero .carousel,
+.hero .carousel-inner,
+.hero .carousel-item {
+    height: 100%;
+}
+
+.hero .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
     text-align: center;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-}
-
-.btn-outline {
-    border: 2px solid white;
-    padding: 10px 20px;
     color: white;
-    margin-left: 10px;
-    text-decoration: none;
 }
 
-.diferenciais {
+.sobre {
     padding: 60px 20px;
+    background: #f9fafb;
+}
+
+.sobre-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.sobre-intro h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.sobre-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.sobre-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     text-align: center;
 }
 
-.card i {
-    font-size: 40px;
-    margin-bottom: 10px;
+.sobre-numeros {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.sobre-numeros div h3 {
+    font-size: 28px;
     color: #0d6efd;
 }
 
-.cta {
-    background: #f5f5f5;
+.sobre-historia,
+.sobre-diferencial {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.sobre-historia h3,
+.sobre-diferencial h3 {
+    margin-bottom: 10px;
+}
+
+.contato {
     padding: 60px 20px;
     text-align: center;
 }
 
-.logo {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3rem;
+.contato-sub {
+    margin: 10px 0 40px;
+    color: #555;
+}
+
+.contato-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contato-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 220px;
+    flex: 1;
+    max-width: 250px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
+}
+
+.contato-card i {
+    font-size: 35px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.contato-cta {
+    margin-top: 20px;
+}
+
+.form-sub {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+.form-group button {
+    padding: 12px;
+    font-size: 16px;
 }

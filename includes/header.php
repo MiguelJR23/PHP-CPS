@@ -6,12 +6,14 @@
     <title>Etec ZL</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="container nav">
-        <h2 class="logo"><img src="../assets/img/logoEtec.png" alt="Logo"></h2>
-
+        <div class="logo">
+          <img src="/assets/img/logoEtec.png" alt="Logo Etec">
+        </div>
         <nav>
             <ul class="menu">
                 <li><a href="/index.php">Início</a></li>
@@ -21,9 +23,12 @@
             </ul>
         </nav>
 
-        <form class="search-form" role="search">
-            <input type="search" placeholder="Buscar...">
-            <button type="submit">OK</button>
-        </form>
+     <form class="search-form" role="search">
+      <div class="search-box">
+          <i class="ri-search-line"></i>
+          <input type="search" placeholder="Buscar cursos...">
+          <button type="submit">Buscar</button>
+      </div>
+     </form>
     </div>
 </header>
