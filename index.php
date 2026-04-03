@@ -11,23 +11,13 @@
             </div>
             <div class="carousel-item">
                 <img src="assets/img/slide3.jpg" class="d-block w-100">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
         <h1>Transformando seu futuro através da educação</h1>
         <p>Capacitação profissional com cursos modernos e focados no mercado.</p>
 
         <div class="hero-buttons">
-            <a href="pages/cursos.php" class="btn">Ver cursos</a>
+            <a href="pages/cursos.php" class="btn-outline">Ver cursos</a>
             <a href="forms/formulario.php" class="btn-outline">Agendar visita</a>
         </div>
     </div>
