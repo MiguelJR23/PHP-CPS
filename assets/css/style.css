@@ -621,3 +621,62 @@ a, button {
     margin: 0 auto 30px;
     border-radius: 2px;
 }
+
+.contato-box {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+.contato-info {
+    flex: 1;
+    border-right: 1px solid #eee;
+    padding-right: 30px;
+}
+
+.contato-info h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.contato-info p {
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.info-item i {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.contato-form {
+    flex: 1;
+}
+
+.contato-form h2 {
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.contato-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contato-form input {
+    width: 100%;
+}
+
+.contato-form .btn {
+    width: 100%;
+}
