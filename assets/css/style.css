@@ -295,17 +295,6 @@ section {
     overflow: hidden;
 }
 
-.hero .carousel,
-.hero .carousel-inner,
-.hero .carousel-item {
-    height: 100%;
-}
-
-.hero .carousel-item img {
-    height: 100%;
-    object-fit: cover;
-}
-
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -725,4 +714,117 @@ a, button {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    padding: 0; /* remove padding antigo */
+}
+
+/* CARROSSEL OCUPA TUDO */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+/* IMAGEM AJUSTADA */
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY ESCURO */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/* TEXTO CENTRAL */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+/* GARANTE CAMADAS */
+.carousel {
+    position: relative;
+    z-index: 0;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0d6efd, #003366);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFEITO DE LUZ / DESTAQUE */
+.cta::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+}
+
+.cta::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+}
+
+/* TÍTULO */
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* TEXTO */
+.cta p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO DESTACADO */
+.cta .btn {
+    background: #ffc107;
+    color: #212529;
+    font-size: 18px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* HOVER MAIS FORTE */
+.cta .btn:hover {
+    background: #e0a800;
+    transform: scale(1.05);
 }
