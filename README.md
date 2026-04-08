@@ -1,7 +1,6 @@
 # Projeto Institucional - Site Educacional
 
-Este projeto consiste em um site institucional voltado à apresentação de cursos, estrutura e canais de contato de uma instituição de ensino.
-
+Este projeto consiste em um site institucional voltado à apresentação de cursos, estrutura e canais de contato da Etec Zona Leste
 ## Funcionalidades
 
 * Página inicial com seção de destaque (hero com carrossel)
