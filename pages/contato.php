@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="contato-form">
-                <h2>Agende uma visita</h2>
+                <h2>Mande um email</h2>
                 <form action="../forms/processar.php" method="POST">
 
                     <div class="form-group">
