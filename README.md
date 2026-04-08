@@ -20,16 +20,46 @@ Este projeto consiste em um site institucional voltado à apresentação de curs
 
 ## Como executar
 
+### Método 1: Servidor local (XAMPP, WAMP, Laragon)
+
 1. Clone o repositório:
 
-```
+```bash
 git clone https://github.com/seu-usuario/seu-repo.git
 ```
 
-2. Coloque os arquivos em um servidor local (como XAMPP, WAMP ou Laragon)
+2. Coloque os arquivos na pasta do servidor (ex: `htdocs` no XAMPP)
 
 3. Acesse no navegador:
 
-```
+```bash
 http://localhost/seu-projeto
+```
+
+---
+
+### Método 2: Via terminal (PHP embutido)
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repo.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd seu-repo
+```
+
+3. Inicie o servidor PHP:
+
+```bash
+php -S localhost:8000
+```
+
+4. Abra no navegador:
+
+```bash
+http://localhost:8000
 ```
