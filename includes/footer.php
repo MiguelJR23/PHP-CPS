@@ -1,6 +1,5 @@
 <footer class="footer">
     <div class="container footer-grid">
-
         <div class="footer-col">
             <h3>Etec ZL</h3>
             <p>Transformando vidas através da educação profissional.</p>
@@ -37,9 +36,7 @@
                 <a href="#"><i class="ri-youtube-fill"></i></a>
             </div>
         </div>
-
     </div>
-
     <div class="footer-bottom">
         <p>&copy; <?php echo date("Y"); ?> Etec ZL. Todos os direitos reservados.</p>
     </div>
