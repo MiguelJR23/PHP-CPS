@@ -1,18 +1,13 @@
 <?php include 'includes/header.php'; ?>
 <main>
  <section class="hero">
-
     <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-        <!-- INDICADORES -->
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2"></button>
         </div>
-
-        <div class="carousel-inner">
-            
+        <div class="carousel-inner"> 
             <div class="carousel-item active">
                 <img src="assets/img/slide1.jpg" class="d-block w-100">
             </div>
@@ -24,10 +19,8 @@
             <div class="carousel-item">
                 <img src="assets/img/slide3.jpg" class="d-block w-100">
             </div>
-
         </div>
 
-        <!-- SETAS -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
@@ -35,17 +28,12 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
-
     </div>
-
-    <!-- OVERLAY -->
     <div class="hero-overlay"></div>
-
-    <!-- CONTEÚDO -->
     <div class="hero-content container">
         <h1>Transformando seu futuro através da educação</h1>
         <p>Capacitação profissional com cursos modernos e focados no mercado.</p>
-
+        
         <div class="hero-buttons">
             <a href="pages/cursos.php" class="btn">Ver cursos</a>
             <a href="forms/formulario.php" class="btn-outline">Agendar visita</a>

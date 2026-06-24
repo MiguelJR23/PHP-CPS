@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("formVisita");
     formulario.addEventListener("submit", function(event) {
 
+        document.querySelectorAll(".erro").forEach(function(elemento){
+            elemento.textContent = "";
+        });
+
         const nome = document.getElementById("nome").value.trim();
         const idade = Number(document.getElementById("idade").value);
         const cpf = document.getElementById("cpf").value.replace(/\D/g, "");
@@ -18,30 +22,38 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value.trim();
 
         if(nome.length < 3){
-            alert("Nome inválido.");
+            document.getElementById("erroNome").textContent =
+            "Nome deve possuir pelo menos 3 caracteres.";
             event.preventDefault();
             return;
         }
-        if(idade < 18 || idade > 120){
-            alert("Idade inválida.");
+
+        if(idade < 14 || idade > 120){
+            document.getElementById("erroIdade").textContent =
+            "A idade deve estar entre 18 e 120 anos.";
             event.preventDefault();
             return;
         }
+
         if(cpf.length !== 11){
-            alert("CPF deve possuir 11 números.");
+            document.getElementById("erroCpf").textContent =
+            "CPF deve possuir 11 números.";
             event.preventDefault();
             return;
         }
+
         if(telefone.length !== 10 && telefone.length !== 11){
-            alert("Telefone inválido.");
+            document.getElementById("erroTelefone").textContent =
+            "Telefone inválido.";
             event.preventDefault();
             return;
         }
+
         if(!email.includes("@") || !email.includes(".")){
-            alert("Email inválido.");
+            document.getElementById("erroEmail").textContent =
+            "Digite um email válido.";
             event.preventDefault();
             return;
         }
-        console.log("Formulário validado com sucesso!");
     });
 });

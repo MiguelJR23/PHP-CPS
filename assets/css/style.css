@@ -678,7 +678,6 @@ a, button {
     flex-wrap: wrap;
 }
 
-/* ===== CAIXA DE RESULTADO ===== */
 .resultado-box {
     background: white;
     padding: 40px;
@@ -689,7 +688,6 @@ a, button {
     text-align: center;
 }
 
-/* TÍTULOS */
 .sucesso {
     color: #28a745;
     margin-bottom: 20px;
@@ -720,23 +718,20 @@ a, button {
     position: relative;
     height: 90vh;
     overflow: hidden;
-    padding: 0; /* remove padding antigo */
+    padding: 0;
 }
 
-/* CARROSSEL OCUPA TUDO */
 .carousel,
 .carousel-inner,
 .carousel-item {
     height: 100%;
 }
 
-/* IMAGEM AJUSTADA */
 .carousel-item img {
     height: 100%;
     object-fit: cover;
 }
 
-/* OVERLAY ESCURO */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -748,7 +743,6 @@ a, button {
     z-index: 1;
 }
 
-/* TEXTO CENTRAL */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -760,7 +754,6 @@ a, button {
     color: white;
 }
 
-/* GARANTE CAMADAS */
 .carousel {
     position: relative;
     z-index: 0;
@@ -775,7 +768,6 @@ a, button {
     overflow: hidden;
 }
 
-/* EFEITO DE LUZ / DESTAQUE */
 .cta::before {
     content: "";
     position: absolute;
@@ -798,21 +790,18 @@ a, button {
     right: -50px;
 }
 
-/* TÍTULO */
 .cta h2 {
     font-size: 38px;
     margin-bottom: 15px;
     color: white;
 }
 
-/* TEXTO */
 .cta p {
     font-size: 18px;
     color: #e0e0e0;
     margin-bottom: 30px;
 }
 
-/* BOTÃO DESTACADO */
 .cta .btn {
     background: #ffc107;
     color: #212529;
@@ -823,8 +812,14 @@ a, button {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* HOVER MAIS FORTE */
 .cta .btn:hover {
     background: #e0a800;
     transform: scale(1.05);
+}
+
+.erro {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
 }
