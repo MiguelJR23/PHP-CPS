@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if(nome.length < 3){
             document.getElementById("erroNome").textContent =
-            "Nome deve possuir pelo menos 3 caracteres.";
+            "Pelo menos 3 letras, não use apelidos";
             event.preventDefault();
             return;
         }
 
         if(idade < 14 || idade > 120){
             document.getElementById("erroIdade").textContent =
-            "A idade deve estar entre 18 e 120 anos.";
+            "No mínimo 14 anos";
             event.preventDefault();
             return;
         }
@@ -44,14 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if(telefone.length !== 10 && telefone.length !== 11){
             document.getElementById("erroTelefone").textContent =
-            "Telefone inválido.";
+            "Telefone inválido, não esqueça o DDD";
             event.preventDefault();
             return;
         }
 
         if(!email.includes("@") || !email.includes(".")){
             document.getElementById("erroEmail").textContent =
-            "Digite um email válido.";
+            "Digite um email válido, não esqueça o @ e o domínio";
             event.preventDefault();
             return;
         }
